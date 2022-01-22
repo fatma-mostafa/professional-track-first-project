@@ -1,0 +1,145 @@
+html{
+    scroll-behavior: smooth;
+}
+#Section_1{
+    display: flex;
+    padding-top: 50px;
+    /*THE COLUMN VALUE STACKS THE FLEX ITEMS VERTICALLY(FROM TOP TO BOTTOM)*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding-bottom: 5%;
+    background-image: url('Img/PERSONAL_BG.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.generalDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+a{
+    color: blue;
+}
+a:hover {
+    color:purple;
+    text-decoration: underline;
+  }
+#Section_2{
+    padding-top: 50px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding-bottom: 30px;
+    background-image: url('Img/EDUCATION_BG.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.9;
+}
+#EDUCATION{
+    font-family: Maiandra GD;
+    font-size: 52px;
+    text-decoration: underline;
+}
+.context{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 48px;
+    font-family: Plantagenet Cherokee;
+}
+#Section_3{
+    padding-top: 50px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding-bottom: 30px;
+    background-image: url('Img/PERVIOUS\ EXPERIENCE.jpg');
+    background-repeat:no-repeat;
+    background-size:50%;
+    background-position: center;
+    border:2px solid rgb(35, 50, 184);
+}
+container ul li{
+    list-style-type: none;
+}
+#Section_4{
+    padding-top: 50px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding-bottom: 30px;
+    background-image: url('Img/project-BG.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+#VEDIO{
+    padding: 2px;
+    border-radius: 25px;
+    width: 250px;
+    height: 200PX;
+}
+.NavBar{
+    width: auto;
+    height:auto;
+    min-height: 5vw;
+    margin: 5px;
+    border-radius: 25px;
+    background-color: #dee9dd;
+    font-size: 24px;
+    font-family: Forte;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    column-gap: 50px;
+    justify-content: center;
+    text-align: center;
+}
+.NavBar a:hover{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    color: black;
+}
+.NavBar li{
+    display: inline;
+}
+button{
+    background-color: green;
+    font-size: 28px;
+    font-family: Forte;
+    width:50px;
+    border-radius: 50%;
+    float: right;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+footer{
+    text-align: center;
+    padding: 3px;
+    font-family: Monotype Corsiva;
+    font-size: 24px;
+}
+.pSTYLE{
+    padding: 20px;
+    margin-top: 5px;
+    border-radius: 25px;
+    padding-bottom: 30px;
+    background-color:  rgb(35, 50, 184);
+    color: #ffffff;
+    border-radius: 25px;
+    font-size: 100px;
+    font-family: Arial;
+}
