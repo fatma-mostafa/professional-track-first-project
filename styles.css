@@ -1,18 +1,33 @@
-html{
-    scroll-behavior: smooth;
+
+container{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width: 100px) {
+    container {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+    section{
+        flex-basis: 60%; 
+    }
 }
 #Section_1{
     display: flex;
+    flex-basis: 100%;
     padding-top: 50px;
     /*THE COLUMN VALUE STACKS THE FLEX ITEMS VERTICALLY(FROM TOP TO BOTTOM)*/
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     border-radius: 25px;
     padding-bottom: 5%;
     background-image: url('Img/PERSONAL_BG.jpg');
     background-repeat: no-repeat;
     background-size:cover;
+    width: 100%;
 }
 .generalDiv{
     display: flex;
@@ -31,6 +46,7 @@ a:hover {
     padding-top: 50px;
     margin-top: 5px;
     display: flex;
+    flex-basis: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -40,6 +56,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size:cover;
     opacity: 0.9;
+    width: 100%;
 }
 #EDUCATION{
     font-family: Maiandra GD;
@@ -56,6 +73,7 @@ a:hover {
     padding-top: 50px;
     margin-top: 5px;
     display: flex;
+    flex-basis: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -74,6 +92,7 @@ container ul li{
     padding-top: 50px;
     margin-top: 5px;
     display: flex;
+    flex-basis: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -82,6 +101,7 @@ container ul li{
     background-image: url('Img/project-BG.jpeg');
     background-repeat:no-repeat;
     background-size: cover;
+    width: 100%;
 }
 #VEDIO{
     padding: 2px;
@@ -90,9 +110,10 @@ container ul li{
     height: 200PX;
 }
 .NavBar{
-    width: auto;
-    height:auto;
-    min-height: 5vw;
+    width:100% ;
+    display:inline-block;
+    flex-basis: 100%;;
+    min-height: fit-content;
     margin: 5px;
     border-radius: 25px;
     background-color: #dee9dd;
@@ -101,7 +122,6 @@ container ul li{
     position: sticky;
     top: 0;
     z-index: 100;
-    column-gap: 50px;
     justify-content: center;
     text-align: center;
 }
@@ -116,18 +136,26 @@ container ul li{
 }
 button{
     background-color: green;
-    font-size: 28px;
+    font-size: 32px;
     font-family: Forte;
     width:50px;
     border-radius: 50%;
     float: right;
+    text-align: center;
+    justify-content: center;
+    margin-right: 35px;
+    margin-top: 40px;
     
 }
 html{
     scroll-behavior: smooth;
 }
 footer{
+    display: flex;
+    flex-basis: 10%;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
     padding: 3px;
     font-family: Monotype Corsiva;
     font-size: 24px;
@@ -142,4 +170,7 @@ footer{
     border-radius: 25px;
     font-size: 100px;
     font-family: Arial;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
 }
