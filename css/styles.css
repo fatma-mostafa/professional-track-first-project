@@ -3,6 +3,10 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: rgba(96, 98, 100, 0.267);
+}
+
 container{
     width: 100%;
     height:100%;
@@ -109,6 +113,7 @@ container ul li{
     height: 200PX;
 }
 .navbar{
+    position: fixed;
     display: flex;
     width:100% ;
     overflow: auto;
@@ -119,7 +124,7 @@ container ul li{
     overflow: hidden;
     top: 0;
     background-color: powderblue;
-    position: fixed;
+    
 }
 .navbar a:hover{
     border: 1px solid;

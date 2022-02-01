@@ -2,21 +2,11 @@
 /* START COUNT WITH 1 */
 let count = 1;
 let container = document.querySelector('container');
-const GMAIL=document.querySelector('#GMAIL');
-const Img = GMAIL.children[0];
-const WHATS = document.querySelector('#WHATS');
-const NavItems = document.querySelector('.NavBar').children;
-const navBar = document.querySelector('.NavBar');
-
-Img.style.cssText = 'width:70px;height:60px;';
-
-GMAIL.children[1].style.cssText ='font-family:Monotype Corsiva;font-size: 48px;';
+const NavItems = document.querySelector('.navbar').children;
+const navBar = document.querySelector('.navbar');
 
 
-WHATS.children[0].style.cssText = 'width:70px;height:70px;';
-WHATS.children[1].style.cssText = 'font-family:Forte;font-size: 48px;';
 
-document.querySelector('#LOCATION').children[1].style.cssText = 'font-family:Forte;font-size: 48px;';
 
 const sections = Array.from(document.getElementsByTagName("section"));
 for(section of sections){
@@ -59,7 +49,7 @@ function newNavItem(){
 
 
 
-function newSECTION(){
+/* function newSECTION(){
     const newDIV = document.createElement('section');
     newDIV.setAttribute('id','Section_'+count);
     newDIV.style.cssText = 'flex-basis: 60%;border:2px solid rgb(35, 50, 184);font-size: 28px;font-family: Forte;padding-top: 50px;margin-top: 5px;display: flex;flex-direction: column;align-items: center;justify-content: center;border-radius: 25px;padding-bottom: 30px;';
@@ -67,16 +57,22 @@ function newSECTION(){
     `SECTION ${count} ADDED, AWESOME  
     CHANGE IT'S CONTENT AS YOU WANT`;
     container.appendChild(newDIV);
-}
+} */
 
 
 
-const button = document.getElementById('BUTTON');
+
+
+
+
+
+
+/* const button = document.getElementById('BUTTON');
 button.addEventListener('click',function(){
     newSECTION();
     newNavItem();
 
 });
-
+ */
 
     
