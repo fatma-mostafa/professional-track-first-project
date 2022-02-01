@@ -1,38 +1,34 @@
-
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 container{
     width: 100%;
     height:100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
-@media (min-width: 100px) {
-    container {
-      flex-wrap: nowrap;
-      flex-direction: column;
-    }
-    section{
-        flex-basis: 60%; 
-    }
-}
+
+
 #Section_1{
     display: flex;
-    flex-basis: 100%;
-    padding-top: 50px;
-    /*THE COLUMN VALUE STACKS THE FLEX ITEMS VERTICALLY(FROM TOP TO BOTTOM)*/
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center; 
+    padding-top: 50px;
+    margin-top: 5px;
+    /*THE COLUMN VALUE STACKS THE FLEX ITEMS VERTICALLY(FROM TOP TO BOTTOM)*/
     border-radius: 25px;
     padding-bottom: 5%;
-    background-image: url('Img/PERSONAL_BG.jpg');
+    background-image: url('../Img/PERSONAL_BG.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     width: 100%;
+    height: 100%;
 }
 .generalDiv{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    line-height: 1.5;
     padding-bottom: 1%;
 }
 a{
@@ -43,20 +39,20 @@ a:hover {
     text-decoration: underline;
   }
 #Section_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 50px;
     margin-top: 5px;
-    display: flex;
-    flex-basis: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     border-radius: 25px;
     padding-bottom: 30px;
-    background-image: url('Img/EDUCATION_BG.jpg');
+    background-image: url('../Img/EDUCATION_BG.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     opacity: 0.9;
     width: 100%;
+    height: 100%;
 }
 #EDUCATION{
     font-family: Maiandra GD;
@@ -70,38 +66,41 @@ a:hover {
     font-family: Plantagenet Cherokee;
 }
 #Section_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 50px;
     margin-top: 5px;
-    display: flex;
-    flex-basis: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     border-radius: 25px;
     padding-bottom: 30px;
-    background-image: url('Img/PERVIOUS\ EXPERIENCE.jpg');
+    background-image: url('../Img/PERVIOUS\ EXPERIENCE.jpg');
     background-repeat:no-repeat;
     background-size:50%;
     background-position: center;
     border:2px solid rgb(35, 50, 184);
+    width: 100%;
+    height: 100%;
 }
 container ul li{
     list-style-type: none;
 }
 #Section_4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 50px;
     margin-top: 5px;
-    display: flex;
-    flex-basis: 100%;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 25px;
     padding-bottom: 30px;
-    background-image: url('Img/project-BG.jpeg');
+    background-image: url('../Img/project-BG.jpeg');
     background-repeat:no-repeat;
     background-size: cover;
     width: 100%;
+    height: 100%;
 }
 #VEDIO{
     padding: 2px;
@@ -109,32 +108,26 @@ container ul li{
     width: 250px;
     height: 200PX;
 }
-.NavBar{
+.navbar{
+    display: flex;
     width:100% ;
-    display:inline-block;
-    flex-basis: 100%;;
-    min-height: fit-content;
-    margin: 5px;
-    border-radius: 25px;
-    background-color: #dee9dd;
+    overflow: auto;
     font-size: 24px;
     font-family: Forte;
-    position: sticky;
-    top: 0;
-    z-index: 100;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    top: 0;
+    background-color: powderblue;
+    position: fixed;
 }
-.NavBar a:hover{
+.navbar a:hover{
     border: 1px solid;
     padding: 10px;
     box-shadow: 5px 10px #888888;
     color: black;
 }
-.NavBar li{
-    display: inline;
-}
-button{
+/* button{
     background-color: green;
     font-size: 32px;
     font-family: Forte;
@@ -146,14 +139,11 @@ button{
     margin-right: 35px;
     margin-top: 40px;
     
-}
-html{
+} */
+/* html{
     scroll-behavior: smooth;
-}
+} */
 footer{
-    display: flex;
-    flex-basis: 10%;
-    flex-direction: column;
     text-align: center;
     justify-content: center;
     padding: 3px;
@@ -161,8 +151,8 @@ footer{
     font-size: 24px;
 }
 .pSTYLE{
-    padding: 20px;
-    margin-top: 5px;
+    margin-top: 0;
+    padding-top: 50px;
     border-radius: 25px;
     padding-bottom: 30px;
     background-color:  rgb(35, 50, 184);
@@ -170,7 +160,4 @@ footer{
     border-radius: 25px;
     font-size: 100px;
     font-family: Arial;
-    display: flex;
-    flex-basis: 100%;
-    flex-direction: column;
 }
