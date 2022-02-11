@@ -2,8 +2,8 @@
 /* START COUNT WITH 1 */
 let count = 1;
 let container = document.querySelector('container');
-const NavItems = document.querySelector('.navbar').children;
 const navBar = document.querySelector('.navbar');
+
 
 
 
@@ -15,31 +15,29 @@ for(section of sections){
 
 function newNavItem(){
     const navItem = document.createElement('li');
-    navItem.setAttribute('class','Section_'+count);
+    navItem.setAttribute('class','navItem');
     const navLink = document.createElement('a');
     navLink.textContent = "SECTION "+count;
     let ID = '#Section_'+count;
     navLink.setAttribute('href',ID);
+    var navItems = navBar.getElementsByClassName("navItem");
+    
     //THE SCROLL FUNCTIONALITY USING scrollIntoView()
     navLink.addEventListener('click',function(){
+        var current = document.getElementsByClassName("active");
+        if(current.length !== 0){
+            current[0].className = current[0].className.replace(" active", "");
+        } 
+        this.className += " active"; 
         let SECTION = document.querySelector(ID);
         SECTION.scrollIntoView(true);
-        SECTION.classList.add("active");
-        navLink.classList.add("active");
-        for(section of sections){
-            if(section.getAttribute('id') !== SECTION.getAttribute('id')){
-                section.classList.remove("active");
-            }
-        }
-        for(NavItem of NavItems){
-            if(NavItem.getAttribute('class') !== section.getAttribute('class')){
-                NavItem.classList.remove("active");
-            }
-        }
 
 
+       
+        
+        
+        
     });
-
     navItem.style.cssText = 'display:inline-block;padding:2em;';
     navLink.style.cssText = 'text-decoration:none;';
     navItem.appendChild(navLink);
@@ -49,15 +47,6 @@ function newNavItem(){
 
 
 
-/* function newSECTION(){
-    const newDIV = document.createElement('section');
-    newDIV.setAttribute('id','Section_'+count);
-    newDIV.style.cssText = 'flex-basis: 60%;border:2px solid rgb(35, 50, 184);font-size: 28px;font-family: Forte;padding-top: 50px;margin-top: 5px;display: flex;flex-direction: column;align-items: center;justify-content: center;border-radius: 25px;padding-bottom: 30px;';
-    newDIV.textContent = 
-    `SECTION ${count} ADDED, AWESOME  
-    CHANGE IT'S CONTENT AS YOU WANT`;
-    container.appendChild(newDIV);
-} */
 
 
 
@@ -67,12 +56,7 @@ function newNavItem(){
 
 
 
-/* const button = document.getElementById('BUTTON');
-button.addEventListener('click',function(){
-    newSECTION();
-    newNavItem();
 
-});
- */
+
 
     
